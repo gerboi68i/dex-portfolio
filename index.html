@@ -161,7 +161,7 @@
   .eng-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:46px}
   @media(max-width:760px){.eng-grid{grid-template-columns:1fr}}
   .eng-card{position:relative;display:flex;flex-direction:column;gap:16px;background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:8px;padding:30px;overflow:hidden;transition:border-color .4s,box-shadow .4s,transform .4s}
-  .eng-card::before{content:"";position:absolute;inset:0;border-radius:8px;padding:1px;background:linear-gradient(130deg,transparent 30%,var(--acc),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s}
+  .eng-card::before{content:"";position:absolute;inset:0;border-radius:8px;padding:1px;background:linear-gradient(130deg,transparent 30%,var(--acc),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s;pointer-events:none}
   .eng-card:hover::before{opacity:.7}
   .eng-card:hover{border-color:rgba(204,255,0,.35);box-shadow:0 26px 64px rgba(0,0,0,.5);transform:translateY(-3px)}
   .eng-top{display:flex;align-items:center;gap:18px}
@@ -173,9 +173,10 @@
   .eng-desc{color:var(--muted);font-size:.95rem;line-height:1.6}
   .eng-tags{display:flex;gap:7px;flex-wrap:wrap}
   .eng-tags span{font-family:var(--mono);font-size:.62rem;letter-spacing:1px;text-transform:uppercase;color:#cfd0c9;border:1px solid var(--line);padding:5px 9px;border-radius:2px}
-  .eng-links{display:flex;gap:10px;margin-top:auto;padding-top:6px;flex-wrap:wrap}
+  .eng-links{display:flex;gap:10px;margin-top:auto;padding-top:6px;flex-wrap:wrap;position:relative;z-index:2}
   .eng-links a{font-family:var(--mono);font-size:.7rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:9px 13px;border-radius:3px;transition:.2s}
-  .eng-links a:hover{border-color:var(--acc);color:var(--acc)}
+  .eng-links a{cursor:pointer}
+  .eng-links a:hover{border-color:var(--acc);color:var(--acc);background:rgba(204,255,0,.08);box-shadow:0 0 0 1px rgba(204,255,0,.25)}
 </style>
 </head>
 <body>
