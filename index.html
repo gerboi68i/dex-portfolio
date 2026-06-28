@@ -209,6 +209,7 @@ function draw(){c.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.y-
       <a href="#casestudy" data-cur>Case Study</a>
       <a href="#work" data-cur>3D Work</a>
       <a href="#roblox" data-cur>Roblox</a>
+      <a href="#product" data-cur>Web</a>
       <a href="#sandbox" data-cur>Sandbox</a>
       <a href="#code" data-cur>Code</a>
       <a href="#contact" data-cur>Contact</a>
@@ -376,6 +377,35 @@ function draw(){c.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.y-
         <div><h3 style="font-size:1.05rem;margin:0 0 10px;color:var(--acc)">Approach</h3><p style="color:var(--muted);line-height:1.65;font-size:.95rem">The core is pure Luau with no Instance or rendering access: grid, enemies, towers, economy and waves are plain data and classes. Maps generate from a seed, towers are polymorphic (splash, slow, burn, execute), enemies carry armor and resistances, and an AI commander plays the whole match headlessly.</p></div>
         <div><h3 style="font-size:1.05rem;margin:0 0 10px;color:var(--acc)">Outcome</h3><p style="color:var(--muted);line-height:1.65;font-size:.95rem">The same core runs in a headless harness and behind the live 3D view. 25 of 25 self-play matches finish with zero runtime errors, so a balance change is re-validated before it reaches a player. Determinism made the bugs reproducible and the design tunable.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section id="product" class="block">
+    <div class="wrap">
+      <div class="lbl"><span class="num">✦</span> Web Product</div>
+      <h2 class="reveal">PulseWatch: a full SaaS, shipped end to end.</h2>
+      <p class="lead reveal">An open-source uptime and status monitoring platform, built solo in Next.js and TypeScript. Scheduled health checks, automatic incident tracking, response-time charts, and shareable public status pages, live and deployed with green CI.</p>
+      <div class="gal-card reveal" data-full="assets/pulsewatch.png" style="margin-top:30px">
+        <img src="assets/pulsewatch.png" alt="PulseWatch uptime and status monitoring, live product" style="aspect-ratio:16/9" loading="lazy"/>
+        <div class="cap"><b>&#9733;</b> PulseWatch &middot; Next.js, Prisma, Postgres &middot; live on Vercel</div>
+      </div>
+      <article class="eng-card reveal" style="margin-top:22px">
+        <span class="eng-badge"><span class="dot"></span>Live</span>
+        <div class="eng-top">
+          <span class="eng-logo" style="display:grid;place-items:center;color:var(--acc)"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></span>
+          <div>
+            <div class="eng-name">PulseWatch</div>
+            <div class="eng-role">Full-stack SaaS · Solo build</div>
+          </div>
+        </div>
+        <p class="eng-desc">Monitors websites and APIs on a schedule, records status code and response time on every check, opens and resolves incidents automatically, and serves shareable public status pages. Secure session auth, a Postgres data layer via Prisma, and a cron-driven check engine. Open source under AGPL, with CI on every push.</p>
+        <div class="eng-tags"><span>Next.js 16</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Tailwind</span><span>Vercel</span><span>Open source</span></div>
+        <div class="eng-links">
+          <a href="https://pulsewatch-five.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+          <a href="https://github.com/gerboi68i/pulsewatch" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://pulsewatch-five.vercel.app/status/cmqvd56ps0000ucf27ld931ou" target="_blank" rel="noopener">Status page ↗</a>
+        </div>
+      </article>
     </div>
   </section>
 
